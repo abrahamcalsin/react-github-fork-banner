@@ -6,6 +6,7 @@ export interface GlobalStyleProps {
 
 export const GlobalStyle = styled.div<GlobalStyleProps>`
 	position: fixed;
+	top: 0px;
 
 	${(props) => {
 		switch (props.direction) {

@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -71,5 +71,17 @@
   },
   "dependencies": {
     "styled-components": "^5.3.3"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abrahamcalsin/github-fork-banner.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/abrahamcalsin/github-fork-banner/issues"
+  },
+  "homepage": "https://github.com/abrahamcalsin/github-fork-banner#readme"
 }
