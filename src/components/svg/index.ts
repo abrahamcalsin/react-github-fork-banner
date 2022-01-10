@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components'
+import styled from 'styled-components'
 
 
 export const StyledPath =styled.path`
@@ -15,21 +15,14 @@ export const PathBanner = styled(StyledPath)`
 	color: ${({ color }) => color || 'black'};
 `
 
-export const PathOctoTail = styled(StyledPath)`
-	transform-origin: 14px 9px;
+export const PathOctoLeftEar = styled(StyledPath)`
+  transform-origin: 60px 20px;
 `
 
-export const octoTailAnimated = keyframes`
-0%,
-  100% {
-    transform: rotate(0deg);
-  }
-  20%,
-  60% {
-    transform: rotate(-25deg);
-  }
-  40%,
-  80% {
-    transform: rotate(5deg);
-  }
+export const PathOctoRightEar = styled(StyledPath)`
+  transform-origin: 71px 31px;
+`
+
+export const PathOctoTail = styled(StyledPath)`
+  transform-origin: 48px 36px;
 `
