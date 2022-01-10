@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
-
-export const StyledPath =styled.path`
+export const StyledPath = styled.path`
  fill: currentColor;
 `
 
