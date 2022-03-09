@@ -6,6 +6,11 @@ import {
   octoTailAnimated,
 } from '../keyframes';
 
+const animationProperties = css`
+  animation-duration: 560ms;
+  animation-timing-function: ease-in-out;
+`;
+
 export interface HyperlinkProps {
   animation?: string;
 }
@@ -19,8 +24,7 @@ export const Hyperlink = styled.a<HyperlinkProps>`
         return css`
           &:hover ${PathOctoLeftEar} {
             animation-name: ${octoLeftEarAnimated};
-            animation-duration: 560ms;
-            animation-timing-function: ease-in-out;
+            ${animationProperties}
           }
         `;
 
@@ -28,8 +32,7 @@ export const Hyperlink = styled.a<HyperlinkProps>`
         return css`
           &:hover ${PathOctoRightEar} {
             animation-name: ${octoRightEarAnimated};
-            animation-duration: 560ms;
-            animation-timing-function: ease-in-out;
+            ${animationProperties}
           }
         `;
 
@@ -37,14 +40,12 @@ export const Hyperlink = styled.a<HyperlinkProps>`
         return css`
           &:hover ${PathOctoLeftEar} {
             animation-name: ${octoLeftEarAnimated};
-            animation-duration: 560ms;
-            animation-timing-function: ease-in-out;
+            ${animationProperties}
           }
 
           &:hover ${PathOctoRightEar} {
             animation-name: ${octoRightEarAnimated};
-            animation-duration: 560ms;
-            animation-timing-function: ease-in-out;
+            ${animationProperties}
           }
         `;
 
@@ -52,8 +53,7 @@ export const Hyperlink = styled.a<HyperlinkProps>`
         return css`
           &:hover ${PathOctoTail} {
             animation-name: ${octoTailAnimated};
-            animation-duration: 560ms;
-            animation-timing-function: ease-in-out;
+            ${animationProperties}
           }
         `;
 
@@ -61,14 +61,12 @@ export const Hyperlink = styled.a<HyperlinkProps>`
         return css`
           &:hover ${PathOctoLeftEar} {
             animation-name: ${octoLeftEarAnimated};
-            animation-duration: 560ms;
-            animation-timing-function: ease-in-out;
+            ${animationProperties}
           }
 
           &:hover ${PathOctoTail} {
             animation-name: ${octoTailAnimated};
-            animation-duration: 560ms;
-            animation-timing-function: ease-in-out;
+            ${animationProperties}
           }
         `;
 
@@ -76,14 +74,12 @@ export const Hyperlink = styled.a<HyperlinkProps>`
         return css`
           &:hover ${PathOctoRightEar} {
             animation-name: ${octoRightEarAnimated};
-            animation-duration: 560ms;
-            animation-timing-function: ease-in-out;
+            ${animationProperties}
           }
 
           &:hover ${PathOctoTail} {
             animation-name: ${octoTailAnimated};
-            animation-duration: 560ms;
-            animation-timing-function: ease-in-out;
+            ${animationProperties}
           }
         `;
 
@@ -91,20 +87,17 @@ export const Hyperlink = styled.a<HyperlinkProps>`
         return css`
           &:hover ${PathOctoTail} {
             animation-name: ${octoTailAnimated};
-            animation-duration: 560ms;
-            animation-timing-function: ease-in-out;
+            ${animationProperties}
           }
 
           &:hover ${PathOctoLeftEar} {
             animation-name: ${octoLeftEarAnimated};
-            animation-duration: 560ms;
-            animation-timing-function: ease-in-out;
+            ${animationProperties}
           }
 
           &:hover ${PathOctoRightEar} {
             animation-name: ${octoRightEarAnimated};
-            animation-duration: 560ms;
-            animation-timing-function: ease-in-out;
+            ${animationProperties}
           }
         `;
 
