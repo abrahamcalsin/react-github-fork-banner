@@ -75,3 +75,7 @@ These are the properties that can be added:
 
 - GitHub: [@abrahamcalsin](https://github.com/abrahamcalsin)
 - Twitter: [@abrahamcalsin](https://twitter.com/abraham_calsin)
+
+## License 🔑
+
+This project is licensed under <a href="https://github.com/abrahamcalsin/react-github-fork-banner/blob/main/LICENSE">MIT license.</a>
