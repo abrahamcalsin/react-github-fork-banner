@@ -13,6 +13,9 @@
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
     "prepare": "tsdx build",
+    "prettier": "prettier --ignore-path .gitignore \"**/*.{ts,tsx,json,md}\"",
+    "format": "npm run prettier -- --write",
+    "check-format": "npm run prettier -- --list-different",
     "size": "size-limit",
     "analyze": "size-limit --why",
     "storybook": "start-storybook -p 6006",
@@ -25,12 +28,6 @@
     "hooks": {
       "pre-commit": "tsdx lint"
     }
-  },
-  "prettier": {
-    "printWidth": 80,
-    "semi": true,
-    "singleQuote": true,
-    "trailingComma": "es5"
   },
   "name": "react-github-fork-banner",
   "description": "Add a github banner with a link to the fork or repository of your project.",
