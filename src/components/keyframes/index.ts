@@ -1,4 +1,4 @@
-import { keyframes } from 'styled-components'
+import { keyframes } from 'styled-components';
 
 export const octoLeftEarAnimated = keyframes`
   0%,
@@ -13,7 +13,7 @@ export const octoLeftEarAnimated = keyframes`
   80% {
     transform: rotate(35deg);
   }
-`
+`;
 
 export const octoRightEarAnimated = keyframes`
   0%,
@@ -28,7 +28,7 @@ export const octoRightEarAnimated = keyframes`
   80% {
     transform: rotate(-25deg);
   }
-`
+`;
 
 export const octoTailAnimated = keyframes`
 0%,
@@ -43,4 +43,4 @@ export const octoTailAnimated = keyframes`
   80% {
     transform: rotate(5deg);
   }
-`
+`;
