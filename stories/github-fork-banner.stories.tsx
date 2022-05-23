@@ -1,22 +1,17 @@
-import React from 'react';
-import { Meta, Story } from '@storybook/react';
+import React from 'react'
+import { Meta, Story } from '@storybook/react'
 
-import {
-  GithubForkBanner,
-  GithubForkBannerProps,
-} from '../src/components/github-fork-banner';
+import { GithubForkBanner, GithubForkBannerProps } from '../src/components/github-fork-banner'
 
 const meta: Meta = {
   title: 'React Github Fork Banner',
   component: GithubForkBanner,
-};
+}
 
-export default meta;
+export default meta
 
-const Template: Story<GithubForkBannerProps> = (args) => (
-  <GithubForkBanner {...args} />
-);
+const Template: Story<GithubForkBannerProps> = args => <GithubForkBanner {...args} />
 
-export const Default = Template.bind({});
+export const Default = Template.bind({})
 
-Default.args = {};
+Default.args = {}

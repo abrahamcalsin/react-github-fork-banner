@@ -1,44 +1,26 @@
-import React from 'react';
+import React from 'react'
 
-import { GlobalStyle } from '../global-style';
-import { Hyperlink } from '../hyperlink';
-import {
-  Svg,
-  PathBanner,
-  PathOctoLeftEar,
-  PathOctoRightEar,
-  PathOctoTail,
-  StyledPath,
-} from '../svg';
+import { GlobalStyle } from '../global-style'
+import { Hyperlink } from '../hyperlink'
+import { Svg, PathBanner, PathOctoLeftEar, PathOctoRightEar, PathOctoTail, StyledPath } from '../svg'
 
 export interface GithubForkBannerProps {
-  direction?: string;
-  size?: number;
-  animation?: string;
-  customHref: string;
-  bannerColor?: string;
-  octoColor?: string;
+  direction?: string
+  size?: number
+  animation?: string
+  customHref: string
+  bannerColor?: string
+  octoColor?: string
 }
 
 export const GithubForkBanner = (props: GithubForkBannerProps) => {
-  const { direction, size, animation, customHref, bannerColor, octoColor } =
-    props;
+  const { direction, size, animation, customHref, bannerColor, octoColor } = props
 
   return (
     <>
       <GlobalStyle direction={direction}>
-        <Svg
-          viewBox="0 0 90.132797 89.996094"
-          width={size}
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <Hyperlink
-            href={customHref}
-            target="_blank"
-            rel="noreferrer"
-            color={octoColor}
-            animation={animation}
-          >
+        <Svg viewBox="0 0 90.132797 89.996094" width={size} xmlns="http://www.w3.org/2000/svg">
+          <Hyperlink href={customHref} target="_blank" rel="noreferrer" color={octoColor} animation={animation}>
             <PathBanner d="M 0,0 H 90.1328 V 89.996094 Z" color={bannerColor} />
 
             <StyledPath d="m 56.8869,16.138194 c -2.1841,-0.6014 -7.239,3.5705 -8.2245,8.3088 -0.9856,4.7383 2.9559,8.5426 2.9559,8.5426 -0.9166,-0.0219 -1.9461,0.1696 -3.2631,1.1356 l -2.3308,2.2525 -3.9581,3.9975 c 0,0 -0.8075,0.8606 -1.9506,-0.3086 l 9.9971,9.9703 c 0,0 -0.876,-0.7635 0.3986,-1.8911 1.704,-1.8882 7.5801,-6.2077 7.037,-9.2289 1.3434,0.9834 3.3382,2.8692 7.9723,2.452 4.634,-0.4173 9.1977,-5.4578 8.8984,-7.7016 -0.02688,-2.399004 -0.667654,-4.84523 -2.0045,-7.345 -2.0119,-3.625 -4.9006,-6.1666 -8.2006,-8.2002 -1.557387,-0.73778 -2.967911,-1.488251 -7.3271,-1.9839 z" />
@@ -49,5 +31,5 @@ export const GithubForkBanner = (props: GithubForkBannerProps) => {
         </Svg>
       </GlobalStyle>
     </>
-  );
-};
+  )
+}

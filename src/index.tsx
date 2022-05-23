@@ -1,1 +1,1 @@
-export * from './components/github-fork-banner';
+export * from './components/github-fork-banner'
