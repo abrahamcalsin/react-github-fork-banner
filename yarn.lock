@@ -3389,6 +3389,11 @@
   resolved "https://registry.yarnpkg.com/@xtuc/long/-/long-4.2.2.tgz#d291c6a4e97989b5c61d9acf396ae4fe133a718d"
   integrity sha512-NuHqBY1PB/D8xU6s/thBgOAiAP7HOYDQ32+BFZILJ8ivkUkAHQnWfn6WhL79Owj1qmUnoN/YPhktdIoucipkAQ==
 
+"@yonycalsin/prettier-config-react-typescript@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@yonycalsin/prettier-config-react-typescript/-/prettier-config-react-typescript-1.0.1.tgz#18075df514e4b37f1569c4b279b95f791f66c2db"
+  integrity sha512-yHFhAAfVHHKDP9Gm8OpLg87sGhIuNNH29TElAkIVzd/Y6/NijtcDWPBBjxNAmHR1wnZxBXVzcQGXzBWgvZspuQ==
+
 abab@^2.0.0:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/abab/-/abab-2.0.6.tgz#41b80f2c871d19686216b82309231cfd3cb3d291"
