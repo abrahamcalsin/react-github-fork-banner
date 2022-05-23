@@ -74,7 +74,13 @@
     "type": "git",
     "url": "git+https://github.com/abrahamcalsin/github-fork-banner.git"
   },
-  "keywords": [],
+  "keywords": [
+    "react",
+    "github-corner",
+    "github-fork-banner",
+    "github",
+    "fork"
+  ],
   "bugs": {
     "url": "https://github.com/abrahamcalsin/github-fork-banner/issues"
   },
