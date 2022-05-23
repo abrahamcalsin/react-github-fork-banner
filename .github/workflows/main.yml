@@ -8,7 +8,7 @@ jobs:
 
     strategy:
       matrix:
-        node: ['10.x', '12.x', '14.x']
+        node: ['14.x']
         os: [ubuntu-latest, windows-latest, macOS-latest]
 
     steps:
@@ -22,15 +22,17 @@ jobs:
 
       - name: Install deps and build (with cache)
         uses: bahmutov/npm-install@v1
+        with:
+            install-command: yarn --frozen-lockfile --silent
 
       - name: Format
-        run: npm run check-format
+        run: yarn check-format
 
       - name: Lint
-        run: npm run lint
+        run: yarn lint
 
       - name: Test
-        run: npm run test --ci --coverage --maxWorkers=2
+        run: yarn test --ci --coverage --maxWorkers=2
 
       - name: Build
-        run: npm run build
+        run: yarn build
