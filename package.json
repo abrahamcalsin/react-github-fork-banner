@@ -14,7 +14,7 @@
     "lint": "tsdx lint",
     "prepare": "tsdx build",
     "format": "yarn run prettier -- --write",
-    "check:format": "yarn run prettier -- --list-different",
+    "check:format": "yarn run prettier --list-different",
     "prettier": "prettier --ignore-path .gitignore \"**/*.{js,json,ts,tsx,scss,css,md}\"",
     "size": "size-limit",
     "analyze": "size-limit --why",
