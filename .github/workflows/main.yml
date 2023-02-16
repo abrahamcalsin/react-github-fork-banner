@@ -26,7 +26,7 @@ jobs:
             install-command: yarn --frozen-lockfile --silent --ignore-engines
 
       - name: Format
-        run: yarn run check-format
+        run: yarn run check:format
 
       - name: Lint
         run: yarn run lint
