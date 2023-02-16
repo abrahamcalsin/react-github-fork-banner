@@ -8,7 +8,7 @@ jobs:
 
     strategy:
       matrix:
-        node: ['14.x']
+        node: ['12.x', '14.x', '15.x', '16.x']
         os: [ubuntu-latest, windows-latest, macOS-latest]
 
     steps:
@@ -26,13 +26,13 @@ jobs:
             install-command: yarn --frozen-lockfile --silent
 
       - name: Format
-        run: yarn check-format
+        run: yarn run check-format
 
       - name: Lint
-        run: yarn lint
+        run: yarn run lint
 
       - name: Test
-        run: yarn test --ci --coverage --maxWorkers=2
+        run: yarn run test --ci --coverage --maxWorkers=2
 
       - name: Build
-        run: yarn build
+        run: yarn run build
